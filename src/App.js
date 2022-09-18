@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+// є API от SpaceX
+// https://api.spacexdata.com/v3/launches/
+//     потрібно вивести всі запуски кораблів окрім 2020 року
+// репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
+
+
 import './App.css';
+
+import Flights from "./components/flights/Flights";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      < div>
+
+        <Flights/>
+
+      </div>
   );
 }
 
